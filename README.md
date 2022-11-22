@@ -1,16 +1,16 @@
-### Hi there 👋
+void setup() {
+  size(400, 400);
+}
 
-<!--
-**Stalwtrie/stalwtrie** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+void draw()
+{
+  for(int i=1;i<600;i+=80)
+  {    
+     noFill();
+     stroke(random(0,255),random(0,255),random(0,255));
+     strokeWeight(80);
+     circle(width/2,height/2,i);
+  }
+  saveFrame();
+}
+  
